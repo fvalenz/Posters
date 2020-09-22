@@ -2,34 +2,46 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Posters</title>
-    <link rel="stylesheet" type="text/css" href="style/main2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Posters</title>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style/main2.css">
+
+
+  <script>
+
+    $(document).ready(function () {
+      $('#preloader').delay(700).fadeOut(1000);
+    });
+
+  </script>
 </head>
 
 <body>
+  <!-- PreLoader -->
+  <div id="preloader"><span class="preloader-interior"></span></div>
 
-    <!-- Header -->
-<div class="header">
+  <!-- Header -->
+  <div class="header">
     <h1>Galeria de Posters</h1>
-    <p>*Realizar una galeria responsive.</p>
-    <p>*Colocar imagenes tipo poster.</p>
     <p>*Separar las funciones y estilos para mejorar su escalabilidad.</p>
   </div>
-  
+
   <!-- Photo Grid -->
-  <div class="row"> 
+  <div class="row">
     <div class="column">
-	  <div class="container">
-		<img src="https://linnea.com.ar/wp-content/uploads/2018/09/404PosterNotFoundReverse.jpg" style="width:100%">
-		<div class="text-block">
-		<h4>Empty</h4>
-		<p>Poster Nuevo</p>
-		<a href="https://api.whatsapp.com/send?phone=5491163361063&amp;text=Cuanto%20Cuesta%20este%20poster?" class="myButton" target="_blank">Pregunta</a>
-	  </div>
-	  </div>
+      <div class="container">
+        <img src="image/poster404.jpg" style="width:100%">
+        <div class="text-block">
+          <h4>Empty</h4>
+          <p>Poster Nuevo</p>
+          <a href="https://api.whatsapp.com/send?phone=5491163361063&amp;text=Cuanto%20Cuesta%20este%20poster?"
+            class="myButton" target="_blank">Pregunta</a>
+        </div>
+      </div>
       <img src="image/poster01.jpg" style="width:100%">
       <img src="image/poster02.jpg" style="width:100%">
       <img src="image/poster03.jpg" style="width:100%">
@@ -45,7 +57,7 @@
       <img src="image/poster01.jpg" style="width:100%">
       <img src="image/poster02.jpg" style="width:100%">
       <img src="image/poster03.jpg" style="width:100%">
-    </div>  
+    </div>
     <div class="column">
       <img src="image/poster04.jpg" style="width:100%">
       <img src="image/poster05.jpg" style="width:100%">
@@ -65,5 +77,9 @@
     </div>
   </div>
 
+  <!-- Footer -->
+  <div class="footer">Soy un pie de pagina</div>
+
 </body>
+
 </html>
